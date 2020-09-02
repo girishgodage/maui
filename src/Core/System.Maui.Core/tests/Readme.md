@@ -1,0 +1,1 @@
+Can the platform UI tests go here? Or do the platform UI tests need to be based on the MVVM versions of classes? 

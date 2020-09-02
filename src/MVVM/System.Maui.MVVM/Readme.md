@@ -1,0 +1,2 @@
+- Contains what was once Xamarin.Forms.Core
+- filtered solution files will live in these directories
