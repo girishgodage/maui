@@ -1,1 +1,4 @@
-Can the platform UI tests go here? Or do the platform UI tests need to be based on the MVVM versions of classes? 
+These tests are focused on the renderers specifically so we can use these tests to be very focused in on testing the renderes
+- Mocking Framework for interfaces?
+- Use Pocos?
+- just use MVVM classes since they do what we need?
