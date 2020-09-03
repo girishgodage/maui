@@ -1,2 +1,0 @@
-- This is here the Control Gallery will go
-- Possibly the Platform UI tests
