@@ -7,8 +7,8 @@ namespace Xamarin.Platform
 {
 	public static class ButtonExtensions
 	{
-		public static void UpdateColor(this AppCompatButton appCompatButton, IButton button) => 
-			appCompatButton.SetTextColor(button.Color.ToNative());		
+		public static void UpdateColor(this AppCompatButton appCompatButton, IButton button) =>
+			appCompatButton.SetTextColor(button.Color.ToNative());
 
 		public static void UpdateText(this AppCompatButton appCompatButton, IButton button) =>
 			appCompatButton.Text = button.Text;

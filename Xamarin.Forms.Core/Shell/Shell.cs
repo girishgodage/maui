@@ -499,7 +499,7 @@ namespace Xamarin.Forms
 			{
 				TargetState = state,
 				Animated = animate,
-				EnableRelativeShellRoutes = enableRelativeShellRoutes, 
+				EnableRelativeShellRoutes = enableRelativeShellRoutes,
 				DeferredArgs = deferredArgs
 			});
 		}
@@ -509,7 +509,7 @@ namespace Xamarin.Forms
 			if (shellNavigationParameters.PagePushing != null)
 				Routing.RegisterImplicitPageRoute(shellNavigationParameters.PagePushing);
 
-			ShellNavigationState state = shellNavigationParameters.TargetState ?? Routing.GetRoute(shellNavigationParameters.PagePushing);			
+			ShellNavigationState state = shellNavigationParameters.TargetState ?? Routing.GetRoute(shellNavigationParameters.PagePushing);
 			bool? animate = shellNavigationParameters.Animated;
 			bool enableRelativeShellRoutes = shellNavigationParameters.EnableRelativeShellRoutes;
 			ShellNavigatingEventArgs deferredArgs = shellNavigationParameters.DeferredArgs;
@@ -555,7 +555,7 @@ namespace Xamarin.Forms
 			bool modalStackPreBuilt = false;
 
 			// If we're replacing the whole stack and there are global routes then build the navigation stack before setting the shell section visible
-			if (navigationRequest.Request.GlobalRoutes.Count > 0 && 
+			if (navigationRequest.Request.GlobalRoutes.Count > 0 &&
 				nextActiveSection != null &&
 				navigationRequest.StackRequest == NavigationRequest.WhatToDoWithTheStack.ReplaceIt)
 			{
@@ -1231,7 +1231,7 @@ namespace Xamarin.Forms
 				return;
 			}
 
-			if(args.DeferralCount > 0 && args.CanCancel)
+			if (args.DeferralCount > 0 && args.CanCancel)
 			{
 				_deferredEventArgs = args;
 				args.RegisterDeferralCompletedCallBack(async () =>
@@ -1244,7 +1244,7 @@ namespace Xamarin.Forms
 
 					await CompleteDeferredNavigating(args);
 				});
-			}	
+			}
 		}
 
 		static void OnCurrentItemChanged(BindableObject bindable, object oldValue, object newValue)
